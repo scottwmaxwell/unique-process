@@ -1,3 +1,7 @@
 # unique-process
 
-This is a site that can filter out common macOS processes.
+This site that can filter out common macOS and Windows processes.
+
+This can be useful for identifying unwanted third-party applications/processes.
+
+<img src="assets/images/Screenshot.png">
