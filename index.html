@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Process Check</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
+
+    <div class="header">
+        <h1>Filter common macOS Processes</h1>
+    </div>
+    <small>Enter a list of processes separated by commas.</small><br>
+    <small>Select the submit button to filter out common processes.</small>
+    <div id="form">
         <textarea placeholder="Enter list (item1, item2, etc.)" style="height:200px; width:700px;" type="text" id="process-list"></textarea>
         <br>
         <button id="submit">Submit</button>
     </div>
-    
-    <p id="final-process-list"></p>
+    <div id="final-process-div">
+        <p id="final-process-list"></p>
+    </div>
 </body>
-<script src="./test.js"></script>
+<script src="./index.js"></script>
 </html>

@@ -6,7 +6,8 @@ var defaultList = ['AccessibilityVisualsAgent', 'accountsd', 'Activity Monitor',
 submitButton.addEventListener('click', ()=>{
 
     // Reset new list
-    newListElem.innerHTML += "";
+    newListElem.innerHTML = "";
+    console.log(newListElem)
 
     var processList = document.getElementById('process-list').value;
     processList = processList.replace(/ /g, "").split(",");
@@ -19,8 +20,10 @@ submitButton.addEventListener('click', ()=>{
         }
     }
 
+    newListElem.innerHTML += "<h2>Results:</h2>"
     for(let i = 0; i < newList.length; i++){
-        newListElem.innerHTML += newList[i] + "<br>";
+        var item = "<a id='item-link' target='_blank' href='https://www.google.com/search?q=What+is+" + newList[i] + "'>" + newList[i] + "</a>";
+        newListElem.innerHTML += item + "<br>";
     }
     
 });
